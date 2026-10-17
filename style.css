@@ -1,0 +1,236 @@
+
+body {
+    background-color: #0f172a;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 30px;
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.welcome-card {
+    background-color: #1e293b;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #334155;
+}
+
+.greeting {
+    color: #a78bfa;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.welcome-card h1 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.welcome-card p {
+    line-height: 1.6;
+}
+
+.task-card {
+    margin-top: 20px;
+    padding: 24px;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 16px;
+}
+
+.task-card h2 {
+    margin-top: 0;
+}
+
+.task-status {
+    color: #a78bfa;
+    font-size: 14px;
+}
+
+.chat-card {
+    margin-top: 20px;
+    padding: 24px;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 16px;
+}
+
+#chat-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#user-input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #475569;
+    border-radius: 8px;
+    background-color: #0f172a;
+    color: white;
+}
+
+#chat-form button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #8b5cf6;
+    color: white;
+    cursor: pointer;
+}
+
+#chat-messages {
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+
+
+}
+
+/* Study Planner */
+
+.planner-card {
+    margin-top: 20px;
+    padding: 24px;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 16px;
+}
+
+.planner-card h2 {
+    margin-top: 0;
+}
+
+.planner-card p {
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+#planner-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+#planner-form label {
+    font-size: 14px;
+    color: #e2e8f0;
+}
+
+#subjects,
+#study-time {
+    padding: 12px;
+    border: 1px solid #475569;
+    border-radius: 8px;
+    background-color: #0f172a;
+    color: white;
+    font-size: 15px;
+}
+
+#planner-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #8b5cf6;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#planner-form button:hover {
+    background-color: #7c3aed;
+}
+
+#study-plan {
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+#study-plan li {
+    margin-bottom: 8px;
+}
+
+#progress-container {
+    margin-top: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #334155;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#progress-fill {
+    width: 0%;
+    height: 100%;
+    background-color: #8b5cf6;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+#progress-text {
+    font-size: 14px;
+    color: #c4b5fd;
+}
+
+/* AI response formatting */
+.markdown-reply {
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+.markdown-reply h1,
+.markdown-reply h2,
+.markdown-reply h3 {
+    margin: 16px 0 8px;
+    color: #c4b5fd;
+}
+
+.markdown-reply p {
+    margin: 8px 0;
+}
+
+.markdown-reply ul {
+    padding-left: 24px;
+    margin: 8px 0;
+}
+
+.markdown-reply li {
+    margin: 5px 0;
+}
+
+/* Inline code */
+.markdown-reply code {
+    font-family: "SFMono-Regular", Consolas, monospace;
+    background: rgba(167, 139, 250, 0.14);
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-size: 0.92em;
+}
+
+/* Code blocks */
+.markdown-reply pre {
+    background: #11111b;
+    border: 1px solid #39334f;
+    border-radius: 10px;
+    padding: 14px;
+    margin: 12px 0;
+    overflow-x: auto;
+    white-space: pre;
+}
+
+.markdown-reply pre code {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}

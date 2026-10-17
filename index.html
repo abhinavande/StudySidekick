@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySidekick AI</title>
+</head>
+<body>
+    
+<main class="container">
+    <section class="welcome-card">
+        <p class="greeting">YOUR PERSONAL STUDY SPACE</p>
+        <h1>Hey, welcome to StudySidekick!</h1>
+        <p>Let's make studying simpler, one task at a time.</p>
+     </section>
+
+<section class="chat-card">
+    <h2>Ask StudySidekick</h2>
+    <p>What do you need help studying today?</p>
+
+    <form id="chat-form">
+        <input
+            type="text"
+            id="user-input"
+            placeholder="e.g. Help me plan my Python revision..."
+        >
+        <button type="submit">Send</button>
+    </form>
+
+    <div id="chat-messages">
+        <p>StudySidekick: Hey! What are we learning today?</p>
+    </div>
+</section>
+
+
+<section class="task-card">
+    <h2>Today's Focus</h2>
+
+<section class="planner-card">
+    <h2>📚 Create a Study Plan</h2>
+    <p>Tell us what you need to study and how much time you have.</p>
+
+    <form id="planner-form">
+        <label for="subjects">Subjects or topics</label>
+        <input
+            type="text"
+            id="subjects"
+            placeholder="e.g. Python, Maths, Physics"
+            required
+        >
+
+        <label for="difficult-subject">Which subject is hardest?</label>
+        <input
+            type="text"
+            id="difficult-subject"
+            placeholder="e.g. Mathematics"
+            required
+        >
+
+
+        <label for="study-time">Available time (minutes)</label>
+        <input
+            type="number"
+            id="study-time"
+            placeholder="e.g. 120"
+            min="15"
+            required
+        >
+
+        <button type="submit">Generate My Plan</button>
+    </form>
+
+<div id="study-plan"></div>
+
+<div id="progress-container">
+    <p id="progress-text">Progress: 0%</p>
+
+    <div class="progress-bar">
+        <div id="progress-fill"></div>
+    </div>
+</div></section>
+
+    <h3>Python Practice</h3>
+    <p>Complete 3 Python practice problems.</p>
+    <p class="task-status">Ready to start</p>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
